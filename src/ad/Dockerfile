@@ -1,3 +1,4 @@
+#This si the docker file for ad svc
 FROM eclipse-temurin:21-jdk AS builder
 
 WORKDIR /usr/src/app/
