@@ -1,6 +1,6 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
-
+#This is a minimal docker compose
 x-default-logging: &logging
   driver: "json-file"
   options:
