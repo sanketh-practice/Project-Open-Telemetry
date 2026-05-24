@@ -1,18 +1,20 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
-
+#Adding this comment 1
+#Adding this comment 2
+#Adding this comment 3
 x-default-logging: &logging
   driver: "json-file"
   options:
     max-size: "5m"
     max-file: "2"
     tag: "{{.Name}}"
-
+#This is networks section
 networks:
   default:
     name: opentelemetry-demo
     driver: bridge
-
+#This is services section
 services:
   # ******************
   # Core Demo Services
@@ -387,7 +389,7 @@ services:
       - OTEL_RESOURCE_ATTRIBUTES
     depends_on:
       otel-collector:
-        condition: service_started
+        condition: service_start
     logging: *logging
 
   # Load Generator
