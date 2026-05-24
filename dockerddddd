@@ -1,18 +1,19 @@
 # Copyright The OpenTelemetry Authors
 # SPDX-License-Identifier: Apache-2.0
-
+#Adding this comment 1
+#Adding this comment 2
 x-default-logging: &logging
   driver: "json-file"
   options:
     max-size: "5m"
     max-file: "2"
     tag: "{{.Name}}"
-
+#This is networks section
 networks:
   default:
     name: opentelemetry-demo
     driver: bridge
-
+#This is services section
 services:
   # ******************
   # Core Demo Services
